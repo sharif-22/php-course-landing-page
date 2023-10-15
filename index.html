@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>PHP | course Landing page</title>
 
     <!-- vite dev css  -->
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -13,8 +13,83 @@
     <!-- vite build css -->
     <!-- <link rel="stylesheet" href="./dist/assets/index-4914c7bf.css" /> -->
     <!-- vite build css -->
+
+    <style>
+      li a:hover .nav-hover {
+        display: inline;
+      }
+    </style>
   </head>
-  <body>
-    <h1 class="bg-green-500">hello</h1>
+  <body class="bg-[#fffcf4]">
+    <!-- nav section -->
+    <section
+      class="lg:p-8 p-4 bg-white container mx-auto sticky top-0 border-b"
+    >
+      <nav class="flex items-center justify-between">
+        <!-- logo  -->
+        <a href="#">
+          <img
+            class="rounded-md lg:w-16 w-12"
+            src="./public/images/cybderdudenetworks_profile.jpg"
+            alt="logo"
+          />
+        </a>
+        <!-- logo  -->
+
+        <!-- nav menus -->
+        <ol class="lg:flex lg:text-xl hidden gap-8">
+          <li class="relative cursor-pointer">
+            <a href="#" title="Home">
+              <span class="text-black font-semibold">Home </span>
+              <span
+                class="w-1/3 bg-black p-0.5 absolute bottom-0 left-0"
+              ></span>
+            </a>
+          </li>
+          <li class="relative cursor-pointer">
+            <a href="#" title="Courses">
+              <span class="text-slate-600 font-semibold hover:text-black"
+                >Courses
+              </span>
+              <span
+                class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
+              ></span>
+            </a>
+          </li>
+          <li class="relative cursor-pointer">
+            <a href="#" title="Reviews">
+              <span class="text-slate-600 font-semibold hover:text-black"
+                >Reviews
+              </span>
+              <span
+                class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
+              ></span>
+            </a>
+          </li>
+          <li
+            class="cursor-pointer bg-black hover:bg-zinc-700 text-white px-5 rounded-full py-0.5 flex items-center justify-center"
+          >
+            <a href="#" title="Login to track progress"> Login </a>
+          </li>
+        </ol>
+        <!-- nav menus -->
+
+        <!-- hammberger menu -->
+        <svg
+          class="lg:hidden w-12"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          viewBox="0 0 48 48"
+        >
+          <path
+            fill="#000"
+            d="M6 22H42V26H6zM6 10H42V14H6zM6 34H42V38H6z"
+          ></path>
+        </svg>
+        <!-- hammberger menu -->
+      </nav>
+    </section>
+    <!-- nav section -->
   </body>
 </html>
