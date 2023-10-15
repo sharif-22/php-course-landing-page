@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHP | course Landing page</title>
+
+    <!-- vite dev css  -->
+    
+    <!-- vite dev css  -->
+
+    <!-- vite build css -->
+    <!-- <link rel="stylesheet" href="./dist/assets/index-4914c7bf.css" /> -->
+    <!-- vite build css -->
+
+    <style>
+      li a:hover .nav-hover {
+        display: inline;
+      }
+    </style>
+    <link rel="stylesheet" href="/assets/index-f73237aa.css">
+  </head>
+  <body class="bg-[#fffcf4]">
+    <!-- nav section -->
+    <section
+      class="lg:p-8 p-4 bg-white container mx-auto sticky top-0 border-b border-gray-200"
+    >
+      <nav class="flex items-center justify-between">
+        <!-- logo  -->
+        <a href="#">
+          <img
+            class="rounded-md lg:w-16 w-12"
+            src="data:image/jpeg;base64,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"
+            alt="logo"
+          />
+        </a>
+        <!-- logo  -->
+
+        <!-- nav menus -->
+        <ol class="lg:flex lg:text-xl hidden gap-8">
+          <li class="relative cursor-pointer">
+            <a href="#" title="Home">
+              <span class="text-black font-semibold">Home </span>
+              <span
+                class="w-1/3 bg-black p-0.5 absolute bottom-0 left-0"
+              ></span>
+            </a>
+          </li>
+          <li class="relative cursor-pointer">
+            <a href="#" title="Courses">
+              <span class="text-slate-600 font-semibold hover:text-black"
+                >Courses
+              </span>
+              <span
+                class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
+              ></span>
+            </a>
+          </li>
+          <li class="relative cursor-pointer">
+            <a href="#" title="Reviews">
+              <span class="text-slate-600 font-semibold hover:text-black"
+                >Reviews
+              </span>
+              <span
+                class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
+              ></span>
+            </a>
+          </li>
+          <li
+            class="cursor-not-allowed bg-black hover:bg-zinc-700 text-white px-5 rounded-full py-0.5 flex items-center justify-center"
+          >
+            <a
+              href="#"
+              title="Login to track progress"
+              class="cursor-not-allowed"
+            >
+              Login
+            </a>
+          </li>
+        </ol>
+        <!-- nav menus -->
+
+        <!-- hammberger menu -->
+        <svg
+          class="lg:hidden w-12"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          viewBox="0 0 48 48"
+        >
+          <path
+            fill="#000"
+            d="M6 22H42V26H6zM6 10H42V14H6zM6 34H42V38H6z"
+          ></path>
+        </svg>
+        <!-- hammberger menu -->
+      </nav>
+    </section>
+    <!-- nav section -->
+
+    <!-- hero section -->
+    <section
+      class="lg:p-8 p-4 bg-white container mx-auto flex items-center lg:flex-row flex-col lg:gap-0 gap-4"
+    >
+      <!-- hero img -->
+      <div class="w-full lg:w-1/3">
+        <img
+          class="rounded-md w-full"
+          src="/assets/Software_engineer_working-3b724484.png"
+          alt="Software developer illustration"
+          srcset=""
+        />
+      </div>
+      <!-- hero img -->
+
+      <div class="lg:p-16 w-full space-y-4">
+        <!-- hero text -->
+        <h1 class="lg:text-6xl text-3xl font-semibold">
+          Learn
+          <span
+            class="bg-[#7b7fe9] text-white px-4 hover:-rotate-12 hover:ease-in duration-150 cursor-pointer inline-block rounded-3xl"
+            >PHP</span
+          >
+          without limits and spread knowledge.
+        </h1>
+        <p class="lg:my-4 lg:text-xl text-lg">
+          Enhance PHP expertise by building projects for practical experience,
+          creating a valuable portfolio, and pursuing PHP certifications for
+          career advancement.
+        </p>
+        <!-- hero text -->
+
+        <!-- btns  -->
+        <div class="flex items-center gap-6">
+          <button
+            class="bg-[#7b7fe9] px-4 py-2 rounded-full shadow-sm shadow-slate-700 text-white font-medium hover:bg-[#7b7fb5]"
+          >
+            See Courses
+          </button>
+
+          <div class="flex items-center gap-1">
+            <svg
+              class="rounded-full bg-[#7b7fe9] text-white cursor-pointer hover:bg-[#7b7fb5] shadow shadow-slate-700"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M9.525 18.025q-.5.325-1.012.038T8 17.175V6.825q0-.6.513-.888t1.012.038l8.15 5.175q.45.3.45.85t-.45.85l-8.15 5.175Z"
+              />
+            </svg>
+            <p class="font-medium text-zinc-500">Watch Course Trailer</p>
+          </div>
+        </div>
+        <!-- btns  -->
+
+        <!-- recent engagements -->
+        <div class="space-y-2">
+          <p class="font-medium text-zinc-500">Recent engagement</p>
+          <div class="flex gap-4">
+            <div>
+              <span class="text-4xl font-medium">60k+</span>
+              <span class="text-zinc-500">Students</span>
+            </div>
+            <div>
+              <span class="text-4xl font-medium">10k+</span>
+              <span class="text-zinc-500">Video</span>
+            </div>
+          </div>
+        </div>
+        <!-- recent engagements -->
+      </div>
+    </section>
+    <!-- hero section -->
+
+    <!-- course acess hint -->
+    <div
+      class="mx-auto container bg-[#7b7fe9] p-4 text-white text-lg font-medium"
+    >
+      Simply log in for free to get life time access to this course 🎉
+    </div>
+    <!-- course acess hint -->
+
+    <!-- course Enrollment section -->
+    <section
+      class="lg:p-8 p-4 bg-slate-700 container mx-auto flex flex-col justify-around items-center lg:flex-row-reverse py-9 gap-10"
+    >
+      <div class="lg:w-1/3 w-full relative cursor-pointer hover:shadow">
+        <img
+          class="rounded-t-md"
+          src="/assets/programmer-work-3b31cda0.jpg"
+          alt="programmer"
+        />
+        <svg
+          class="w-36 absolute top-16 right-5"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 256 135"
+        >
+          <defs>
+            <radialGradient
+              id="logosPhp0"
+              cx=".837"
+              cy="-125.811"
+              r="363.057"
+              gradientTransform="matrix(.463 0 0 .463 76.464 81.918)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#FFF" />
+              <stop offset=".5" stop-color="#4C6B97" />
+              <stop offset="1" stop-color="#231F20" />
+            </radialGradient>
+          </defs>
+          <ellipse
+            cx="128"
+            cy="67.3"
+            fill="url(#logosPhp0)"
+            rx="128"
+            ry="67.3"
+          />
+          <ellipse cx="128" cy="67.3" fill="#6181B6" rx="123" ry="62.3" />
+          <path
+            fill="#FFF"
+            d="m152.9 87.5l6.1-31.4c1.4-7.1.2-12.4-3.4-15.7c-3.5-3.2-9.5-4.8-18.3-4.8h-10.6l3-15.6c.1-.6 0-1.2-.4-1.7s-.9-.7-1.5-.7h-14.6c-1 0-1.8.7-2 1.6l-6.5 33.3c-.6-3.8-2-7-4.4-9.6c-4.3-4.9-11-7.4-20.1-7.4H52.1c-1 0-1.8.7-2 1.6L37 104.7c-.1.6 0 1.2.4 1.7s.9.7 1.5.7h14.7c1 0 1.8-.7 2-1.6l3.2-16.3h10.9c5.7 0 10.6-.6 14.3-1.8c3.9-1.3 7.4-3.4 10.5-6.3c2.5-2.3 4.6-4.9 6.2-7.7l-2.6 13.5c-.1.6 0 1.2.4 1.7s.9.7 1.5.7h14.6c1 0 1.8-.7 2-1.6l7.2-37h10c4.3 0 5.5.8 5.9 1.2c.3.3.9 1.5.2 5.2L134.1 87c-.1.6 0 1.2.4 1.7s.9.7 1.5.7h15c.9-.3 1.7-1 1.9-1.9zm-67.6-26c-.9 4.7-2.6 8.1-5.1 10c-2.5 1.9-6.6 2.9-12 2.9h-6.5l4.7-24.2h8.4c6.2 0 8.7 1.3 9.7 2.4c1.3 1.6 1.6 4.7.8 8.9zm130-18.6c-4.3-4.9-11-7.4-20.1-7.4h-28.3c-1 0-1.8.7-2 1.6l-13.1 67.5c-.1.6 0 1.2.4 1.7s.9.7 1.5.7h14.7c1 0 1.8-.7 2-1.6l3.2-16.3h10.9c5.7 0 10.6-.6 14.3-1.8c3.9-1.3 7.4-3.4 10.5-6.3c2.6-2.4 4.8-5.1 6.4-8c1.6-2.9 2.8-6.1 3.5-9.6c1.7-8.7.4-15.5-3.9-20.5zM200 61.5c-.9 4.7-2.6 8.1-5.1 10c-2.5 1.9-6.6 2.9-12 2.9h-6.5l4.7-24.2h8.4c6.2 0 8.7 1.3 9.7 2.4c1.4 1.6 1.7 4.7.8 8.9z"
+          />
+          <path
+            fill="#000004"
+            d="M74.8 48.2c5.6 0 9.3 1 11.2 3.1c1.9 2.1 2.3 5.6 1.3 10.6c-1 5.2-3 9-5.9 11.2c-2.9 2.2-7.3 3.3-13.2 3.3h-8.9l5.5-28.2h10zM39 105h14.7l3.5-17.9h12.6c5.6 0 10.1-.6 13.7-1.8c3.6-1.2 6.8-3.1 9.8-5.9c2.5-2.3 4.5-4.8 6-7.5s2.6-5.7 3.2-9c1.6-8 .4-14.2-3.5-18.7s-10.1-6.7-18.6-6.7H52.1L39 105zm74.3-85.4h14.6l-3.5 17.9h13c8.2 0 13.8 1.4 16.9 4.3c3.1 2.9 4 7.5 2.8 13.9L151 87.1h-14.8l5.8-29.9c.7-3.4.4-5.7-.7-6.9c-1.1-1.2-3.6-1.9-7.3-1.9h-11.7l-7.5 38.7h-14.6l13.1-67.5zm76.2 28.6c5.6 0 9.3 1 11.2 3.1c1.9 2.1 2.3 5.6 1.3 10.6c-1 5.2-3 9-5.9 11.2c-2.9 2.2-7.3 3.3-13.2 3.3H174l5.5-28.2h10zM153.7 105h14.7l3.5-17.9h12.6c5.6 0 10.1-.6 13.7-1.8c3.6-1.2 6.8-3.1 9.8-5.9c2.5-2.3 4.5-4.8 6-7.5s2.6-5.7 3.2-9c1.6-8 .4-14.2-3.5-18.7s-10.1-6.7-18.6-6.7h-28.3L153.7 105z"
+          />
+        </svg>
+        <p class="text-white text-xl bg-[#7b7fe9] px-5 py-2 rounded-b-md">
+          Enroll Course
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <p class="lg:text-3xl text-xl font-semibold text-white">
+          PHP Crash Course
+        </p>
+        <!-- rateing stars  -->
+        <div class="flex text-white">
+          <!-- star full -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
+            />
+          </svg>
+          <!-- star full -->
+
+          <!-- star full -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
+            />
+          </svg>
+          <!-- star full -->
+
+          <!-- star full -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
+            />
+          </svg>
+          <!-- star full -->
+
+          <!-- star full -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
+            />
+          </svg>
+          <!-- star full -->
+
+          <!-- half star -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m19.65 9.04l-4.84-.42l-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73l3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28L12 15.4z"
+            />
+          </svg>
+          <!-- half star -->
+        </div>
+        <!-- rateing stars  -->
+
+        <!-- discription -->
+        <p class="text-lg text-gray-300">
+          Course Highlights Take a step in the right direction with this
+          exclusive PHP Crash Course - 2023 course developed by Cybderdude
+          Networks
+        </p>
+        <!-- discription -->
+      </div>
+    </section>
+    <!-- course Enrollment section -->
+  </body>
+</html>
