@@ -21,12 +21,8 @@
     <!-- Bootstrap icons -->
 
     <!-- vite dev css  -->
-    <!-- <link rel="stylesheet" href="./assets/css/main.css" /> -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <!-- vite dev css  -->
-
-    <!-- vite build css -->
-    <link rel="stylesheet" href="./dist/assets/index-ccb94e83.css" />
-    <!-- vite build css -->
 
     <style>
       li a:hover .nav-hover {
@@ -46,8 +42,8 @@
         <!-- logo  -->
         <a href="#">
           <img
-            class="rounded-md lg:w-16 w-12"
-            src="./public/images/cybderdudenetworks_profile.jpg"
+            class="rounded-full lg:w-16 w-12"
+            src="./public/images/cyberdude-logo-1.png"
             alt="logo"
           />
         </a>
@@ -251,7 +247,9 @@
     <section
       class="lg:p-8 p-4 bg-slate-700 container mx-auto flex flex-col justify-around items-center lg:flex-row-reverse py-9 gap-10"
     >
-      <div class="lg:w-1/3 w-full relative cursor-pointer hover:shadow">
+      <div
+        class="lg:w-1/3 w-full relative cursor-pointer hover:shadow-2xl hover:opacity-90"
+      >
         <img
           class="rounded-t-md"
           src="./public/images/mkassim_project_management_training_classroom_with_students_sof_71cca609-d3fe-47cd-8c1e-80d8cae822fc.png"
@@ -343,8 +341,8 @@
         <!-- discription -->
         <p class="text-lg text-gray-300">
           Course Highlights Take a step in the right direction with this
-          exclusive PHP Crash Course - 2023 course developed by Cybderdude
-          Networks
+          exclusive PHP Crash Course - <span class="year"></span> course
+          developed by Cybderdude Networks
         </p>
         <!-- discription -->
 
@@ -352,7 +350,7 @@
         <button
           class="bg-[#7b7fe9] px-4 py-2 rounded-full shadow-sm shadow-slate-700 text-white font-medium hover:bg-[#7b7fb5]"
         >
-          Enroll
+          Enroll course
         </button>
         <!-- Enroll btn -->
       </div>
@@ -1002,21 +1000,21 @@
 
     <!-- meet instructure -->
     <section
-      class="lg:p-8 p-4 bg-[#7b7fe9] container mx-auto lg:flex items-center gap-8"
+      class="p-8 bg-[#7b7fe9] container mx-auto lg:flex items-center gap-8"
     >
-      <div class="meet-instructure relative lg:w-1/3 cursor-pointer">
+      <div class="relative lg:w-1/2 xl:w-1/3 cursor-pointer">
         <img
           class="w-full rounded-md"
           src="./public/images/anbu-pose.jpg"
           alt="anbu instructor"
         />
         <p
-          class="instructure-details hidden px-5 py-3 bg-gray-700 hover:bg-slate-500 rounded-md text-white font-medium absolute bottom-2 right-2"
+          class="px-5 py-3 bg-gray-700 hover:bg-slate-500 rounded-md text-white font-medium absolute -bottom-4 -right-4"
         >
           Anbu Selvan
         </p>
       </div>
-      <div class="text-white">
+      <div class="text-white mt-5">
         <p class="text-2xl mb-5 font-semibold">Learn from real-world experts</p>
         <p class="mb-5">
           Introducing our course instructor, a seasoned expert in the field,
@@ -1027,17 +1025,74 @@
         <div class="flex gap-3">
           <a
             href="https://www.linkedin.com/company/cyberdude-networks/"
+            class="hover:text-black"
             target="_blank"
           >
             <i class="bi bi-linkedin text-3xl"></i>
           </a>
-          <a href="https://github.com/anburocky3" target="_blank">
+          <a
+            href="https://github.com/anburocky3"
+            class="hover:text-black"
+            target="_blank"
+          >
             <i class="bi bi-github text-3xl"></i>
           </a>
         </div>
       </div>
     </section>
     <!-- meet instructure -->
+
+    <!-- reviews -->
+    <section
+      class="lg:p-8 p-4 py-9 container mx-auto space-y-4 flex flex-col justify-center"
+    >
+      <p class="font-semibold text-lg">Recent Reviews</p>
+      <!-- review-1 -->
+      <div class="rounded bg-[#7b7fe9] p-4 flex items-center flex-1">
+        <div class="relative w-28 lg:w-36">
+          <img
+            src="./public/images/review-1.png"
+            alt="Jonas Morr"
+            class="rounded-full lg:w-20 w-14"
+          />
+          <a
+            href="#"
+            class="absolute p-1 bg-slate-700 w-fit hover:bg-slate-500 text-white font-medium text-[10px] md:text-sm rounded lg:bottom-2 -bottom-2 lg:left-14 left-0"
+            >Jonas Morr</a
+          >
+        </div>
+        <p class="lg:text-xl text-white">
+          - Perfect way to quickly get acquainted with the basics of php
+        </p>
+      </div>
+      <!-- review-1 -->
+
+      <!-- review-2 -->
+      <div class="rounded bg-[#7b7fe9] p-4 flex items-center flex-1">
+        <div class="relative w-28 lg:w-36">
+          <img
+            src="./public/images/review-2.png"
+            alt="Jonas Morr"
+            class="rounded-full lg:w-20 w-14"
+          />
+          <a
+            href="#"
+            class="absolute p-1 bg-slate-700 w-fit hover:bg-slate-500 text-white font-medium text-[10px] md:text-sm rounded lg:bottom-2 -bottom-2 lg:left-14 left-0"
+            >Solina</a
+          >
+        </div>
+        <p class="lg:text-xl text-white">
+          - Yes, this class met my expectations.
+        </p>
+      </div>
+      <!-- review-2 -->
+      <button
+        class="border p-2 font-medium rounded text-center mx-auto inline-block hover:bg-gray-700 hover:text-white"
+      >
+        Load more reviews
+      </button>
+    </section>
+    <!-- reviews -->
 
     <!-- footer section  -->
     <footer>
@@ -1046,98 +1101,150 @@
       >
         <!-- 1st-column -->
         <div>
-          <ol class="flex flex-col text-white gap-3">
+          <ol class="flex flex-col font-semibold gap-3 cursor-pointer">
             <!-- logo -->
             <li>
               <img
-                class="w-52"
-                src="./public/images/cyberdude-logo.png"
+                class="w-52 text-white"
+                src="./public/images/cyberdude-email 1.svg"
                 alt="cyberdude logo"
               />
             </li>
             <!-- mail -->
-            <li>
+            <li class="text-black hover:text-white">
               <i class="bi bi-envelope"></i>
               <a href="mailto:india@cyberdudenetworks.com"
                 >india@cyberdudenetworks.com</a
               >
             </li>
             <!-- phone -->
-            <li>
+            <li class="text-black hover:text-white">
               <i class="bi bi-telephone"></i>
               <a href="tel:+918939738801">+91 8939738801</a>
+            </li>
+            <!-- source code -->
+            <li class="text-black hover:text-white">
+              <i class="bi bi-github"></i>
+              <a
+                href="https://github.com/sharif-22/php-course-landing-page"
+                target="_blank"
+                >Source code</a
+              >
             </li>
           </ol>
         </div>
         <!-- 1st-column -->
 
         <!-- 2nd-column -->
-        <div class="text-white">
-          <ol class="flex flex-col gap-3">
+        <div>
+          <ol class="text-black font-semibold flex flex-col gap-3">
             <li>
-              <a href="#"> Help Center </a>
+              <a href="#" class="hover:text-white"> Help Center </a>
             </li>
             <li>
-              <a href="#">About us</a>
+              <a href="#" class="hover:text-white">About us</a>
             </li>
             <li>
-              <a href="#">Jobs</a>
+              <a href="#" class="hover:text-white">Jobs</a>
             </li>
             <li>
-              <a href="#">Cookie Preferences</a>
+              <a href="#" class="hover:text-white">Cookie Preferences</a>
             </li>
             <li>
-              <a href="#">Legal Notices</a>
-            </li>
-            <li>
-              <a href="#">FAQs</a>
+              <a href="#" class="hover:text-white">FAQs</a>
             </li>
           </ol>
         </div>
         <!-- 2nd-column -->
 
         <!-- 3rd-column -->
-        <div class="text-white">
-          <ol class="flex flex-col gap-3">
+        <div>
+          <ol class="text-black font-semibold flex flex-col gap-3">
             <li>
-              <a href="#"> Account </a>
+              <a href="#" class="hover:text-white cursor-pointer"> Account </a>
             </li>
             <li>
-              <a href="#">Ways to Watch</a>
+              <a href="#" class="hover:text-white cursor-pointer"
+                >Ways to Watch</a
+              >
             </li>
             <li>
-              <a href="#">Certificate Information</a>
+              <a href="#" class="hover:text-white cursor-pointer"
+                >Certificate Information</a
+              >
             </li>
             <li>
-              <a href="#">Blogs</a>
+              <a href="#" class="hover:text-white cursor-pointer">Blogs</a>
             </li>
           </ol>
         </div>
         <!-- 3rd-column -->
 
         <!-- 4th-column -->
-        <div class="text-white">
-          <ol class="flex flex-col gap-3">
+        <div>
+          <ol class="flex flex-col font-semibold gap-3">
             <li>
-              <a href="#"> Media center </a>
+              <a href="#" class="hover:text-white cursor-pointer"
+                >Terms of Use</a
+              >
             </li>
             <li>
-              <a href="#">Terms of Use</a>
+              <a href="#" class="hover:text-white cursor-pointer"
+                >Contact Us
+              </a>
             </li>
             <li>
-              <a href="#">Contact Us </a>
+              <a href="#" class="hover:text-white cursor-pointer">Privacy</a>
             </li>
             <li>
-              <a href="#">Privacy</a>
-            </li>
-            <li>
-              <a href="#">Investor Relations</a>
+              <a href="#" class="hover:text-white">Legal Notices</a>
             </li>
           </ol>
         </div>
         <!-- 4th-column -->
       </section>
+      <section
+        class="lg:p-8 p-4 py-9 bg-white container mx-auto flex justify-between"
+      >
+        <p class="font-semibold text-xl">
+          Copyright
+          <span class="year"></span>
+          All rights reserved
+        </p>
+        <!-- social icons  -->
+        <ul class="flex gap-4">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/khaja-sharif/"
+              target="_blank"
+              title="Linkedin"
+              class="text-4xl"
+              ><i class="bi bi-linkedin text-dark"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/sharif-22"
+              target="_blank"
+              title="Source code repo"
+              class="text-4xl"
+              ><i class="bi bi-github text-dark"></i
+            ></a>
+          </li>
+        </ul>
+        <!-- social icons  -->
+      </section>
     </footer>
     <!-- footer section  -->
+
+    <!-- scripts  -->
+    <script>
+      const date = new Date();
+      console.log(date.getFullYear());
+      const year = document.querySelectorAll(".year");
+      year.forEach((value) => {
+        value.textContent = date.getFullYear() + ".";
+      });
+    </script>
   </body>
 </html>
