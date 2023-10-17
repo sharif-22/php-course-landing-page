@@ -27,7 +27,9 @@ I create a simple php course landing page with HTML and TailwindCSS
 
 ## Demo
 
-[Include links to a live demo, screenshots, or GIFs that showcase your project in action.]
+[Live preview](https://sharif-22.github.io/php-course-landing-page/)
+
+<!-- [Include links to a live demo, screenshots, or GIFs that showcase your project in action.] -->
 
 ## Internship
 
@@ -45,13 +47,13 @@ This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.co
 <h3>Clone the Repository:</h3>
 
 ```
-git clone https://github.com/sharif-22/Instagram-UI-Tailwind
+git clone https://github.com/sharif-22/php-course-landing-page/tree/main
 ```
 
 Navigate to the project
 
 ```
-cd Instagram-UI-Tailwind
+cd php-course-landing-page
 ```
 
 Install the Dependencies
