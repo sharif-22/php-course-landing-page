@@ -27,9 +27,13 @@
     <style>
       li a:hover .nav-hover {
         display: inline;
+        color: black;
       }
-      .meet-instructure:hover .instructure-details {
-        display: inline;
+      li a:hover span {
+        color: black;
+      }
+      .drop-down-menu:hover div {
+        display: block;
       }
     </style>
   </head>
@@ -50,8 +54,8 @@
         <!-- logo  -->
 
         <!-- nav menus -->
-        <ol class="lg:flex lg:text-xl hidden gap-8">
-          <li class="relative cursor-pointer">
+        <ol class="lg:flex lg:text-xl gap-8 hidden">
+          <li class="relative cursor-pointer py-1">
             <a href="#" title="Home">
               <span class="text-black font-semibold">Home </span>
               <span
@@ -59,17 +63,31 @@
               ></span>
             </a>
           </li>
-          <li class="relative cursor-pointer">
+          <li class="relative cursor-pointer py-1 drop-down-menu">
             <a href="#" title="Courses">
               <span class="text-slate-600 font-semibold hover:text-black"
                 >Courses
               </span>
+              <div class="hidden">
+                <ol
+                  class="absolute grid grid-cols-2 gap-1 w-80 border-t-8 top-12 border-t-white bg-slate-600 text-base p-3 text-slate-200"
+                >
+                  <li class="hover:bg-[#7b7fe9] p-1 rounded-md">HTML</li>
+                  <li class="hover:bg-[#7b7fe9] p-1 rounded-md">CSS</li>
+                  <li class="hover:bg-[#7b7fe9] p-1 rounded-md">Java Script</li>
+                  <li class="hover:bg-[#7b7fe9] p-1 rounded-md">
+                    Java Script - DOM
+                  </li>
+                  <li class="hover:bg-[#7b7fe9] p-1 rounded-md">React</li>
+                  <li class="hover:bg-[#7b7fe9] p-1 rounded-md">Python</li>
+                </ol>
+              </div>
               <span
                 class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
               ></span>
             </a>
           </li>
-          <li class="relative cursor-pointer">
+          <li class="relative cursor-pointer py-1">
             <a href="#" title="Reviews">
               <span class="text-slate-600 font-semibold hover:text-black"
                 >Reviews
@@ -94,21 +112,92 @@
         <!-- nav menus -->
 
         <!-- hammberger menu -->
-        <svg
-          class="lg:hidden w-12"
-          xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          viewBox="0 0 48 48"
-        >
-          <path
-            fill="#000"
-            d="M6 22H42V26H6zM6 10H42V14H6zM6 34H42V38H6z"
-          ></path>
-        </svg>
+        <div class="hammberger cursor-pointer lg:hidden">
+          <i class="bi bi-list text-4xl font-bold"></i>
+        </div>
         <!-- hammberger menu -->
       </nav>
     </section>
+
+    <!-- mobile nav menus -->
+    <div class="nav-menu hidden relative">
+      <ol
+        class="bg-[#7b7fe9] fixed w-[100vw] h-[100vh] z-10 flex flex-col items-center justify-center text-2xl gap-32"
+      >
+        <li class="relative cursor-pointer py-1">
+          <a href="#" title="Home">
+            <span class="text-black font-semibold">Home </span>
+            <span class="w-1/3 bg-black p-0.5 absolute bottom-0 left-0"></span>
+          </a>
+        </li>
+        <li class="relative cursor-pointer py-1 drop-down-menu">
+          <a href="#" title="Courses">
+            <span class="text-slate-600 font-semibold hover:text-black"
+              >Courses
+            </span>
+            <div class="hidden">
+              <ol
+                class="absolute grid grid-cols-2 gap-1 w-80 top-10 -left-32 bg-slate-600 text-base p-3 text-slate-200"
+              >
+                <li class="hover:bg-[#7b7fe9] p-1 rounded-md">HTML</li>
+                <li class="hover:bg-[#7b7fe9] p-1 rounded-md">CSS</li>
+                <li class="hover:bg-[#7b7fe9] p-1 rounded-md">Java Script</li>
+                <li class="hover:bg-[#7b7fe9] p-1 rounded-md">
+                  Java Script - DOM
+                </li>
+                <li class="hover:bg-[#7b7fe9] p-1 rounded-md">React</li>
+                <li class="hover:bg-[#7b7fe9] p-1 rounded-md">Python</li>
+              </ol>
+            </div>
+            <span
+              class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
+            ></span>
+          </a>
+        </li>
+        <li class="relative cursor-pointer py-1">
+          <a href="#" title="Reviews">
+            <span class="text-slate-600 font-semibold hover:text-black"
+              >Reviews
+            </span>
+            <span
+              class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
+            ></span>
+          </a>
+        </li>
+        <li
+          class="cursor-not-allowed bg-black hover:bg-zinc-700 text-white px-5 rounded-full py-0.5 flex items-center justify-center"
+        >
+          <a
+            href="#"
+            title="Login to track progress"
+            class="cursor-not-allowed"
+          >
+            Login
+          </a>
+        </li>
+      </ol>
+      <div class="text-sm container mx-auto fixed bottom-0 z-20">
+        <p class="text-center">
+          Design by
+          <a
+            href="https://github.com/sharif-22/php-course-landing-page/tree/main"
+            target="_blank"
+            class="hover:underline"
+            >Khaja Sharif</a
+          >
+          and this landing page is a part of the
+          <a
+            href="https://youtube.com/playlist?list=PL73Obo20O_7grw9hv_lEO6iUPS6gc9ehh&si=pyFnK0faOOFaA9dc"
+            target="_blank"
+            class="hover:underline"
+          >
+            CyberDude Networks Fullstack Internship</a
+          >
+          Program.
+        </p>
+      </div>
+    </div>
+    <!-- mobile nav menus -->
     <!-- nav section -->
 
     <!-- hero section -->
@@ -190,7 +279,7 @@
 
     <!-- course acess hint -->
     <div
-      class="mx-auto container bg-[#7b7fe9] p-4 text-white text-lg font-medium"
+      class="mx-auto container bg-[#7b7fe9] lg:px-8 p-4 text-white text-lg font-medium"
     >
       <span>
         Simply log in for free to get life time access to this course
@@ -1261,13 +1350,6 @@
     <!-- footer section  -->
 
     <!-- scripts  -->
-    <script>
-      const date = new Date();
-      console.log(date.getFullYear());
-      const year = document.querySelectorAll(".year");
-      year.forEach((value) => {
-        value.textContent = date.getFullYear() + ".";
-      });
-    </script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
