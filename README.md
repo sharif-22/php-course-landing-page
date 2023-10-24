@@ -30,6 +30,12 @@ I create a simple php course landing page with HTML and TailwindCSS
 
 [Live preview](https://sharif-22.github.io/php-course-landing-page/)
 
+<a href="">
+
+<img src="./public/images/PHP-course-Landing-page-destop-preview.png"/>
+
+</a>
+
 <!-- [Include links to a live demo, screenshots, or GIFs that showcase your project in action.] -->
 
 ## Internship
