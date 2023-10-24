@@ -19,7 +19,8 @@
   <!-- - [Contributing](#contributing) -->
 
 - [License](#license)
-<!-- - [Acknowledgments](#acknowledgments) -->
+
+- [Acknowledgments](#acknowledgments)
 
 ## Description
 
@@ -71,3 +72,7 @@ npm run dev
 ## License
 
 [MIT](./LICENCE.md)
+
+## Acknowledgments
+
+Design inspired from [Dribble](https://dribbble.com/shots/20072790-eLearning-Landing-Page/attachments/15153563?mode=media)
