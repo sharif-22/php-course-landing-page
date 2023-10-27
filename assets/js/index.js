@@ -13,7 +13,10 @@ function onClickHammberger() {
     navMenu.classList.add("hidden");
   }
 }
-hammberger.addEventListener("click", onClickHammberger);
+hammberger.addEventListener("click", (e) => {
+  e.preventDefault();
+  onClickHammberger();
+});
 
 const navItems = navMenu.children[0].children.length;
 for (let index = 0; index < navItems; index++) {
