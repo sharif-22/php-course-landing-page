@@ -67,14 +67,11 @@ window.onscroll = () => {
 
     if (top >= offset - navHeight && top < offset - navHeight + height) {
       navLinks.forEach((link) => {
+        link.classList.add("text-gray-400");
         link.classList.remove("active");
         document
           .querySelector(`nav ol li a[href*= "#${id}"]`)
-          .classList.add("active");
-
-        document
-          .querySelector(`nav ol li a[href*= "#${id}"]`)
-          .classList.remove("text-gray-400");
+          .classList.replace("text-gray-400", "active");
       });
     }
   });
