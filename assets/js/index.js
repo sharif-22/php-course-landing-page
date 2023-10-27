@@ -71,6 +71,10 @@ window.onscroll = () => {
         document
           .querySelector(`nav ol li a[href*= "#${id}"]`)
           .classList.add("active");
+
+        document
+          .querySelector(`nav ol li a[href*= "#${id}"]`)
+          .classList.remove("text-gray-400");
       });
     }
   });
