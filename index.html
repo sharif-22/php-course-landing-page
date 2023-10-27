@@ -25,11 +25,7 @@
     <!-- vite dev css  -->
 
     <style>
-      li a:hover .nav-hover {
-        display: inline;
-        color: black;
-      }
-      li a:hover span {
+      .active {
         color: black;
       }
     </style>
@@ -40,34 +36,35 @@
       class="bg-white container mx-auto sticky top-0 border-b border-gray-200 z-10"
     >
       <!-- destop nav menus -->
-      <div class="lg:px-8 lg:py-3 p-3">
+      <div class="lg:px-8 lg:py-3">
         <div class="flex items-center justify-between">
           <!-- logo  -->
           <a href="#">
             <img
-              class="rounded-full lg:w-16 w-12"
+              class="rounded-full lg:w-16 w-12 m-3"
               src="./public/images/cyberdude-logo-1.png"
               alt="logo"
             />
           </a>
           <!-- logo  -->
 
-          <!-- nav menus -->
-          <ol class="lg:flex lg:text-xl gap-8 hidden">
-            <li class="relative cursor-pointer py-1">
-              <a href="#home" title="Home">
-                <span class="text-black font-semibold">Home </span>
-                <span
-                  class="w-1/3 bg-black p-0.5 absolute bottom-0 left-0"
-                ></span>
-              </a>
-            </li>
+          <!-- hammberger menu -->
+          <a
+            href="#mobileNavMenu"
+            class="hammberger cursor-pointer lg:hidden m-3"
+          >
+            <i class="bi bi-list text-4xl font-bold"></i>
+          </a>
+          <!-- hammberger menu -->
 
+          <!-- nav menus -->
+          <ol
+            id="mobileNavMenu"
+            class="lg:flex lg:flex-row lg:text-xl lg:text-black lg:static lg:w-auto lg:h-auto lg:bg-transparent gap-8 hidden"
+          >
             <li class="relative cursor-pointer py-1">
-              <a href="#courses" title="Courses">
-                <span class="text-slate-600 font-semibold hover:text-black"
-                  >Courses
-                </span>
+              <a href="#home" title="Home" class="text-gray-400">
+                <span class="font-semibold">Home </span>
                 <span
                   class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
                 ></span>
@@ -75,10 +72,17 @@
             </li>
 
             <li class="relative cursor-pointer py-1">
-              <a href="#" title="About us">
-                <span class="text-slate-600 font-semibold hover:text-black"
-                  >About us
-                </span>
+              <a href="#courses" title="Courses" class="text-gray-400">
+                <span class="font-semibold">Courses </span>
+                <span
+                  class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
+                ></span>
+              </a>
+            </li>
+
+            <li class="relative cursor-pointer py-1">
+              <a href="#about-us" title="About us" class="text-gray-400">
+                <span class="font-semibold">About us </span>
                 <span
                   class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
                 ></span>
@@ -86,75 +90,9 @@
             </li>
           </ol>
           <!-- nav menus -->
-
-          <!-- hammberger menu -->
-          <a href="mobileNavMenu" class="hammberger cursor-pointer lg:hidden">
-            <i class="bi bi-list text-4xl font-bold"></i>
-          </a>
-          <!-- hammberger menu -->
         </div>
       </div>
       <!-- destop nav menus -->
-
-      <!-- mobile nav menus -->
-      <div class="nav-menu hidden relative">
-        <ol
-          id="mobileNavMenu"
-          class="bg-[#7b7fe9] fixed w-[100vw] h-[100dvh] z-10 flex flex-col items-center justify-center text-2xl gap-14"
-        >
-          <li class="relative cursor-pointer py-1">
-            <a href="#home" title="Home">
-              <span class="text-black font-semibold">Home </span>
-              <span
-                class="w-1/3 bg-black p-0.5 absolute bottom-0 left-0"
-              ></span>
-            </a>
-          </li>
-
-          <li class="relative cursor-pointer py-1">
-            <a href="#courses" title="Courses">
-              <span class="text-slate-600 font-semibold hover:text-black"
-                >Courses
-              </span>
-              <span
-                class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
-              ></span>
-            </a>
-          </li>
-
-          <li class="relative cursor-pointer py-1">
-            <a href="#" title="About us">
-              <span class="text-slate-600 font-semibold hover:text-black"
-                >About us
-              </span>
-              <span
-                class="nav-hover w-1/3 bg-black hidden p-0.5 absolute bottom-0 left-0"
-              ></span>
-            </a>
-          </li>
-        </ol>
-        <div class="text-sm container mx-auto fixed bottom-0 z-20">
-          <p class="text-center">
-            Design by
-            <a
-              href="https://github.com/sharif-22/php-course-landing-page/tree/main"
-              target="_blank"
-              class="hover:underline"
-              >Khaja Sharif</a
-            >
-            and this landing page is a part of the
-            <a
-              href="https://youtube.com/playlist?list=PL73Obo20O_7grw9hv_lEO6iUPS6gc9ehh&si=pyFnK0faOOFaA9dc"
-              target="_blank"
-              class="hover:underline"
-            >
-              CyberDude Networks Fullstack Internship</a
-            >
-            Program.
-          </p>
-        </div>
-      </div>
-      <!-- mobile nav menus -->
     </nav>
     <!-- nav section -->
 
@@ -237,7 +175,7 @@
     <!-- hero section -->
 
     <!-- course details -->
-    <section class="container mx-auto bg-white">
+    <div class="container mx-auto bg-white">
       <!-- course discription -->
       <div class="lg:p-8 px-4 py-12 bg-slate-700 space-y-16">
         <!-- course Enrollment section -->
@@ -994,7 +932,7 @@
         </ol>
       </div>
       <!-- Course Curriculum -->
-    </section>
+    </div>
     <!-- course details -->
 
     <!-- meet instructure -->
@@ -1043,10 +981,10 @@
     <!-- other courses -->
     <section
       id="courses"
-      class="lg:p-8 p-4 bg-white container mx-auto space-y-6 scroll-m-16"
+      class="lg:p-8 lg:py-28 p-4 bg-white container mx-auto space-y-6 scroll-m-16"
     >
-      <div>
-        <h2 class="text-3xl font-semibold space-y-2">Free Courses to Enroll</h2>
+      <div class="space-y-2">
+        <h2 class="text-3xl font-semibold">Free Courses to Enroll</h2>
         <p class="text-gray-500">
           Start from beginning, no pre-requesties required.
         </p>
@@ -1108,6 +1046,56 @@
       </div>
     </section>
     <!-- other courses -->
+
+    <!-- about us -->
+    <section
+      id="about-us"
+      class="lg:p-8 lg:py-28 p-4 container mx-auto space-y-12 scroll-m-16 bg-[#7b7fe9] text-white text-center"
+    >
+      <p class="mx-auto text-[12px]">
+        F E W &nbsp;&nbsp; W O R D S &nbsp;&nbsp; A B O U T &nbsp;&nbsp; U S
+      </p>
+      <h2 class="text-3xl font-semibold">CyberDude Networks</h2>
+      <p>
+        <a
+          class="underline"
+          href="https://cyberdudenetworks.com/"
+          target="_blank"
+          >CyberDude Networks Pvt. Ltd.</a
+        >, is a Tech-Startup focused at
+        <a
+          class="underline"
+          href="https://en.wikipedia.org/wiki/Internet_of_things"
+          target="_blank"
+          >Internet of Things </a
+        >(IoT),
+        <a
+          class="underline"
+          href="https://en.wikipedia.org/wiki/Artificial_intelligence"
+          target="_blank"
+          >Artificial Intellegence</a
+        >
+        (AI) delivering and deploying the finest ideas and Tech Application to
+        empower customers in achieving new heights of excellence in today's
+        challenging Business landscape. Also driven by the steadfast quest of
+        Excellence, CyberDude exudes professionalism and proficiency in all
+        areas of function.
+      </p>
+      <p>
+        Established as a Product oriented Enterprise started with Tech-questing
+        geeks. CyberDude assures a dream platform for the
+        <a
+          class="underline"
+          href="https://cyberdudenetworks.com/careers"
+          target="_blank"
+          >career</a
+        >
+        starters by giving Customer and Employee centered Atmosphere by equiping
+        employee with the latest technologies. It ventures a work culture that
+        brims with Passion, Ambient and Commitment.
+      </p>
+    </section>
+    <!-- about us -->
 
     <!-- footer section  -->
     <footer>
